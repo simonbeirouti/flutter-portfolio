@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
-project(test_proj LANGUAGES CXX)
+project(flutter-portfolioj LANGUAGES CXX)
 
-set(BINARY_NAME "test_proj")
+set(BINARY_NAME "flutter-portfolioj")
 
 cmake_policy(SET CMP0063 NEW)
 

@@ -1,6 +1,6 @@
 {
-    "name": "test_proj",
-    "short_name": "test_proj",
+    "name": "flutter-portfolioj",
+    "short_name": "flutter-portfolioj",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
