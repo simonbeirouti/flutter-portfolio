@@ -1,5 +1,6 @@
 import 'package:flutter/widgets.dart';
 
+// Define the responsive class
 class Responsive extends StatelessWidget {
   final Widget mobile;
   final Widget tablet;
@@ -12,6 +13,7 @@ class Responsive extends StatelessWidget {
     required this.desktop,
   }) : super(key: key);
 
+  // Get the current device's screen size
   static bool isMobile(BuildContext context) =>
       MediaQuery.of(context).size.width < 650;
 
@@ -19,13 +21,14 @@ class Responsive extends StatelessWidget {
       MediaQuery.of(context).size.width < 1100 &&
       MediaQuery.of(context).size.width >= 650;
 
-  static bool isMDesktop(BuildContext context) =>
+  static bool isDesktop(BuildContext context) =>
       MediaQuery.of(context).size.width >= 1100;
 
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
+        // If statement to determine widget size
         if (constraints.maxWidth >= 1100) {
           return desktop;
         } else if (constraints.maxWidth >= 650) {

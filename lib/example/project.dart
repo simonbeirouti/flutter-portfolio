@@ -1,5 +1,6 @@
 import '../models/project.dart';
 
+// Example data since we don't have any database data yet
 List<Project> projects = [
   Project(
       name: "Flutter Finance",
@@ -24,7 +25,7 @@ List<Project> projects = [
       image:
           "https://images.unsplash.com/photo-1596496050827-8299e0220de1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"),
   Project(
-      name: "Android/Web Application",
+      name: "Web Application",
       technologiesUsed: ["Android Studio", "Next.js", "OAuth"],
       year: 2021,
       description: "This is my description 1",

@@ -5,10 +5,12 @@ class Header extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Create a Row for the header
     return Row(
       crossAxisAlignment: CrossAxisAlignment.center,
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
+        // Create Column within the row to display text and image
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,

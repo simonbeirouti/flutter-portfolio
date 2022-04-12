@@ -10,8 +10,10 @@ class ProjectCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
+      // Set ontap to open the project detail page
       onTap: () => Navigator.push(context,
           MaterialPageRoute(builder: (_) => ProjectDetail(project: project))),
+      // Create project card with styling
       child: Container(
         width: 300,
         margin: const EdgeInsets.all(15),
@@ -26,9 +28,11 @@ class ProjectCard extends StatelessWidget {
                 blurRadius: 7,
               )
             ]),
+        // Create a single Column
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            // Create a row for the title and the year date
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -50,9 +54,11 @@ class ProjectCard extends StatelessWidget {
                 ),
               ],
             ),
+            // Spacing
             const SizedBox(
               height: 15,
             ),
+            // Image for the project wrapped in Hero for smooth animation
             Hero(
               tag: project.name,
               child: ClipRRect(
@@ -63,9 +69,11 @@ class ProjectCard extends StatelessWidget {
                 ),
               ),
             ),
+            // More spacing
             const SizedBox(
               height: 10,
             ),
+            // Text for the description
             Text(
               project.description,
               maxLines: 3,
